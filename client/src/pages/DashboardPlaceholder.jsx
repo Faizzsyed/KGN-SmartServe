@@ -1,0 +1,3 @@
+export default function DashboardPlaceholder({ role, description }) {
+  return <section className="rounded-3xl border border-[#173c2e]/10 bg-[#fffaf0] p-6 shadow-sm sm:p-10"><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#b9801b]">KGN operations</p><h1 className="mt-3 text-3xl font-semibold">{role} dashboard</h1><p className="mt-3 max-w-xl leading-7 text-[#557064]">{description} This Phase 1 screen is ready for the next implementation pass.</p><div className="mt-8 grid min-h-36 place-items-center rounded-2xl border border-dashed border-[#d6a64d] bg-[#f8f0df] text-sm font-medium text-[#557064]">Coming in Phase 2</div></section>;
+}

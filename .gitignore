@@ -1,0 +1,9 @@
+client/node_modules/
+server/node_modules/
+node_modules/
+client/dist/
+dist/
+client/.env
+server/.env
+.env
+server/.tmp-mongo/
