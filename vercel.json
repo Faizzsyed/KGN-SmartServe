@@ -25,38 +25,27 @@
     },
     {
       "source": "/menu/(.*)",
-      "destination": {
-        "service": "client",
-        "path": "/dist/index.html"
-      }
+      "destination": "/index.html"
+    },
+    {
+      "source": "/order/(.*)",
+      "destination": "/index.html"
     },
     {
       "source": "/kitchen",
-      "destination": {
-        "service": "client",
-        "path": "index.html"
-      }
+      "destination": "/index.html"
     },
     {
       "source": "/waiter",
-      "destination": {
-        "service": "client",
-        "path": "dist/index.html"
-      }
+      "destination": "/index.html"
     },
     {
       "source": "/admin",
-      "destination": {
-        "service": "client",
-        "path": "/client/dist/index.html"
-      }
+      "destination": "/index.html"
     },
     {
       "source": "/admin/qr",
-      "destination": {
-        "service": "client",
-        "path": "/index.html"
-      }
+      "destination": "/index.html"
     },
     {
       "source": "/(.*)",
