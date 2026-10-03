@@ -24,48 +24,6 @@
       }
     },
     {
-      "source": "/menu/(.*)",
-      "destination": {
-        "service": "client",
-        "path": "/index.html"
-      }
-    },
-    {
-      "source": "/order/(.*)",
-      "destination": {
-        "service": "client",
-        "path": "/index.html"
-      }
-    },
-    {
-      "source": "/kitchen",
-      "destination": {
-        "service": "client",
-        "path": "/index.html"
-      }
-    },
-    {
-      "source": "/waiter",
-      "destination": {
-        "service": "client",
-        "path": "/index.html"
-      }
-    },
-    {
-      "source": "/admin",
-      "destination": {
-        "service": "client",
-        "path": "/index.html"
-      }
-    },
-    {
-      "source": "/admin/(.*)",
-      "destination": {
-        "service": "client",
-        "path": "/index.html"
-      }
-    },
-    {
       "source": "/(.*)",
       "destination": {
         "service": "client"
