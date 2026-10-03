@@ -24,6 +24,41 @@
       }
     },
     {
+      "source": "/menu/(.*)",
+      "destination": {
+        "service": "client",
+        "path": "/dist/index.html"
+      }
+    },
+    {
+      "source": "/kitchen",
+      "destination": {
+        "service": "client",
+        "path": "index.html"
+      }
+    },
+    {
+      "source": "/waiter",
+      "destination": {
+        "service": "client",
+        "path": "dist/index.html"
+      }
+    },
+    {
+      "source": "/admin",
+      "destination": {
+        "service": "client",
+        "path": "/client/dist/index.html"
+      }
+    },
+    {
+      "source": "/admin/qr",
+      "destination": {
+        "service": "client",
+        "path": "/index.html"
+      }
+    },
+    {
       "source": "/(.*)",
       "destination": {
         "service": "client"
