@@ -42,8 +42,16 @@ io.on("connection", (socket) => {
 
 const port = process.env.PORT || 5000;
 connectDatabase()
-  .then(() => httpServer.listen(port, () => console.log(`KGN SmartServe API listening on port ${port}`)))
+  .then(() => {
+    if (process.env.NODE_ENV !== "production") {
+      httpServer.listen(port, () => console.log(`KGN SmartServe API listening on port ${port}`));
+    }
+  })
   .catch((error) => {
     console.error(`Server not started: ${error.message}`);
-    process.exit(1);
+    if (process.env.NODE_ENV !== "production") {
+      process.exit(1);
+    }
   });
+
+export default app;

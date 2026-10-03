@@ -7,6 +7,11 @@ export async function connectDatabase() {
     throw new Error("MongoDB connection failed: environment variable missing.");
   }
 
+  if (mongoose.connection.readyState >= 1) {
+    return;
+  }
+
+
   try {
     await mongoose.connect(process.env.MONGO_URI, { dbName: databaseName, serverSelectionTimeoutMS: 10000 });
     console.log(`MongoDB connected to database: ${databaseName}`);
