@@ -27,42 +27,42 @@
       "source": "/menu/(.*)",
       "destination": {
         "service": "client",
-        "path": "/index.html"
+        "path": "/"
       }
     },
     {
       "source": "/order/(.*)",
       "destination": {
         "service": "client",
-        "path": "/index.html"
+        "path": "/"
       }
     },
     {
       "source": "/kitchen",
       "destination": {
         "service": "client",
-        "path": "/index.html"
+        "path": "/"
       }
     },
     {
       "source": "/waiter",
       "destination": {
         "service": "client",
-        "path": "/index.html"
+        "path": "/"
       }
     },
     {
       "source": "/admin",
       "destination": {
         "service": "client",
-        "path": "/index.html"
+        "path": "/"
       }
     },
     {
       "source": "/admin/(.*)",
       "destination": {
         "service": "client",
-        "path": "/index.html"
+        "path": "/"
       }
     },
     {
